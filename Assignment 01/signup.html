@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+<body>
+    <center>
+        <table border="1" cellpadding="12">
+            <tr>
+                <td>
+                    <a href="/"> <img src="logo.svg" alt="Saylani Logo" title="Saylani Welfare International Trust" height="15px"> </a>
+                </td>
+                <td>
+                    <a href="/index.html"> <b>Home</b> </a>
+                </td>
+                <td>
+                    <a href="/about.html"> <b>About</b> </a>
+                </td>
+                <td>
+                    <a href="/gallery.html"> <b>Gallery</b> </a>
+                </td>
+                <td>
+                    <a href="/media.html"> <b>Media</b> </a>
+                </td>
+                <td>
+                    <a href="/contact.html"> <b>Contact</b> </a>
+                </td>
+                <td>
+                    <a href="/login.html"> <b>Login</b> </a>
+                </td>
+                <td>
+                    <a href="/signup.html"> <b>SignUp</b> </a>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <hr/>
+
+    <h1 style="color: red;">This is SignUp Page</h1>
+    <hr/>
+
+    <!-- <center> -->
+        <center> <h2>Please Register/SignUp to Continue</h2> </center>
+        <center> <p>All Fields are Required</p> </center>
+        <br/>
+        <div style="display: flex; justify-content: center">
+        <fieldset style="width:250px; padding-top:30px; padding-bottom:30px;">
+            <legend>SignUp Page</legend>
+            <form>
+                <label for="name">Enter Your Full Name:</label> <br/>
+                <input type="text" id="name" name="Username" placeholder="Full Name" required>
+                <br/><br/>
+                <label for="email">Enter Your Email:</label> <br/>
+                <input type="email" id="email" name="Email" placeholder="example@domain.com" required>
+                <br/><br/>
+                <label for="password">Enter Your Password:</label> <br/>
+                <input type="password" id="password" name="password" placeholder="Your Password" required>
+                <br/><br/>
+                <label for="dob">Date of Birth:</label> <br/>
+                <input type="date" id="dob" name="DoB" required>
+                <br/><br/>
+
+                <label>Gender:</label> <br/>
+                <input type="radio" id="male" name="Gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="Gender" value="Female" required>
+                <label for="female">Female</label>
+                <br/><br/>
+
+                <label>Hobbies:</label> <br/>
+                <input type="checkbox" id="writing" name="Hobbies" value="Writing">
+                <label for="writing">Writing</label>
+                <input type="checkbox" id="painting" name="Hobbies" value="Painting">
+                <label for="painting">Painting</label>
+                <input type="checkbox" id="sketching" name="Hobbies" value="Sketching">
+                <label for="sketching">Sketching</label>
+                <br/><br/>
+
+                <label for="country">Choose Your Country:</label> <br/>
+                <select id="country" name="Country" required>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Pakistan">Saudi Arabia</option>
+                    <option value="Pakistan">Turkey</option>
+                    <option value="Pakistan">Afghanistan</option>
+                </select>
+                <br/><br/>
+
+                <label for="photo">Upload Your Photo:</label> <br/>
+                <input type="file" id="photo" name="Photo" accept="image/*" required>
+                <br/><br/><br/>
+
+                <input type="submit" value="SignUp">
+            </form>
+            <br/>
+            <a href="/login.html">Already A User?</a>
+        </fieldset>
+    </div>
+    <!-- </center> -->
+    <hr/>
+    <center>Copyright &copy; 2022. All Rights Reserved.</center>
+</body>
+</html>
