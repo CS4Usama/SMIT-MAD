@@ -1,2 +1,1 @@
-# SMIT-MAD
-Saylani Mass IT Training Program Faisalabad – Modern Application &amp; API Development Course Batch-01
+# SMIT Modern Application & API Development Batch 01
