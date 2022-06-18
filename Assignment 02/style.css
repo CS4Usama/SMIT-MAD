@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  --primary-color    =>  Font & Button Background Color    */
+/*  --secondary-color  =>  Header & Footer Background Color  */
+/*  --tertiary-color   =>  Main Table Body Background Color  */
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --tertiary-color: #efefef;
+}
+
+.change-mode-css {
+    --primary-color: #D0D0D0;
+    --secondary-color: #080808;
+    --tertiary-color: #141617;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+}
+
+div.header {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+img {
+    width: 12%;
+    margin-left: 8rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 8rem;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1.3rem;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+tr, th, td {
+    border: 2px solid lightgrey;
+    padding: 10px;
+}
+
+th.side-heading {
+    width: 13.6rem;
+}
+
+td {
+    width: 7.5rem;
+    text-align: center;
+}
+
+.more-width {
+    width: 9rem;
+    padding: 0;
+}
+
+small.footer {
+    display: block;
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 7px;
+    margin-top: 3rem;
+}
+
+small.footer > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: lightseagreen;
+}
+
+small.footer > a:hover {
+    text-decoration: underline;
+}
