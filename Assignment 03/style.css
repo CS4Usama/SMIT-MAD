@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Header CSS */
+
+header {
+    display: flex;
+    justify-content:space-between;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+header > span {
+    margin-left: 10px;
+}
+
+header span a {
+    text-decoration: none;
+    color: black;
+    padding-right: 1.5rem;
+    transition: font-weight 0.15s ease-in-out;
+}
+
+header span a:hover {
+    font-weight: bold;
+}
+
+
+/* Main Body CSS */
+
+main {
+    display: grid;
+    grid-template-columns: 5rem  repeat(4, 1fr)  5rem;
+    grid-template-rows: 1fr  2.5rem  27rem  1.5rem  3.5rem  25rem  2.5rem  15rem  1fr;
+    row-gap: 2.5em;
+    column-gap: 0.7em;
+}
+
+.main-img-container {
+    grid-column: 2 / span 4;
+}
+
+.main-img-text {
+    color: white;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.main-img-br {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 8px;
+    margin-right: 8px;
+}
+
+.section-text {
+    grid-column: 2 / span 4;
+    height: 2.5em;
+    font-size: 1.3em;
+    font-weight: 500;
+    border-bottom: 1px solid lightgray;
+}
+
+.house-text {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    position: absolute;
+}
+
+.about-name {
+    color: grey;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+}
+
+.about-button {
+    display: block;
+    background-color: #F0F0F0;
+    text-align: center;
+    font-weight: 500;
+    padding: 5px;
+    cursor: pointer;
+}
+
+div > input {
+    width: 100%;
+    padding: 5px;
+    margin: 7px 0;
+}
+
+.contact-submit-btn {
+    width: 10em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+
+/* Footer CSS */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+footer > a:hover {
+    color: lightgrey;
+    text-decoration: underline;
+}
