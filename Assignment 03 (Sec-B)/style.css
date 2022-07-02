@@ -232,7 +232,6 @@ nav ul li a:hover {
 .contact-text {
     margin-left: 3rem;
     width: 60%;
-    z-index: 1;
 }
 
 .input-wrap > input, textarea {
