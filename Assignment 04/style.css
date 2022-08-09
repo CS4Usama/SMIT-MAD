@@ -1,0 +1,207 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Completely Remove Bootstrap Border Glow */
+button.btn:focus, button.btn:active:focus, .form-control, .form-control:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.btn-success, .btn-success:focus {
+    background-color: #2fbe93;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #25ac83;
+}
+
+
+
+/* Navbar Styling */
+
+button.btn-success:hover .fa-arrow-right {
+    margin-left: 2px;
+    transition: 0.3s;
+}
+
+.fa-sort-down {
+    font-size: small;
+    margin-left: -2px;
+    transform: rotate(-90deg);
+}
+
+/* Click on Parent Element to Change Child Styling */
+a.nav-link:focus .fa-sort-down {
+    transform: rotate(0deg);
+    margin-left: 2px;
+    position: relative;
+    top: -3px;
+    transition: 0.3s;
+}
+
+.fa-arrow-right {
+    font-size: smaller;
+}
+
+
+
+/* Hero Section */
+
+div.gear-settings {
+    position: fixed;
+    top: 3.4rem;
+    right: 0;
+    background-color: white;
+    padding: 0.4rem 0.7rem 0.5rem 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+i.fa-gear {
+    font-size: small;
+    animation: gear-spin 2s linear infinite;
+}
+
+@keyframes gear-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.hero-image {
+    width: 100%;
+    height: 75vh;
+    background: url('./assets/header-image.jpeg') no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero-image-cover {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 25%;
+}
+
+
+
+/* Browse-Businesses Section */
+
+.bg-grayish-color, .form-control, .form-control:focus {
+    background-color: #F4F5FF;
+}
+
+main.bg-grayish-color {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    padding-bottom: 3em;
+}
+
+p.text-primary {
+    font-size: 0.75em;
+    font-weight: 700;
+}
+
+a.card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none;
+}
+
+
+
+/* Latest-News Section */
+
+section.card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    border: none;
+    margin: -5em 4.5em 0 4.5em;
+}
+
+.input-news {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.input-news::placeholder {
+    color: silver;
+}
+
+.btn-primary {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -5px;
+    border: none;
+}
+
+
+
+/* Footer */
+
+.footer-container {
+    background-color: #212832;
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+    padding-top: 1.5em;
+}
+
+a.footer-links {
+    text-decoration: none;
+    color: #909499;
+}
+
+a.footer-links:hover {
+    color: lightgrey;
+}
+
+.horizontal-line {
+    color: #909499;
+    margin: 1em 6em;
+}
+
+.footer-rights {
+    color: #909499;
+    margin: 0 6em;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.creator {
+    text-decoration: none;
+    color: #909499;
+    font-weight: 600;
+}
+
+.creator:hover {
+    color: lightgrey;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .footer-row {
+        padding: 2em 0 0 3em;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    main.bg-grayish-color {
+        padding-bottom: 10em;
+    }
+    section.card {
+        margin-top: -11em;
+    }
+    .footer-row {
+        padding-top: 4em;
+    }
+}
